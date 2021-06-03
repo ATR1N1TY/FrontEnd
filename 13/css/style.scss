@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+// colors
+$primary1: hsl(0, 36%, 70%);
+$primary2: hsl(0, 93%, 68%);
+
+$neutral: hsl(0, 6%, 24%);
+
+//fonts; weights: 300, 400, 600
+$font: 'Josefin Sans', sans-serif;
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: $font;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+    padding: 1.5rem 2rem;
+}
+
+.img{
+    img:nth-child(1){
+        width: 100%;
+    }
+
+    img:nth-child(2){
+        width: 100%;
+        display: none;
+    }
+    
+
+}
+
+.logoimg{
+    img{
+        display: none;
+    }
+}
+
+.left{
+    text-align: center;
+    padding: 1rem;
+
+    h1{
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $neutral;
+
+        span{
+            font-weight: 300;
+            color: $primary1;
+        }
+    }
+
+    p{
+        color: $primary1;
+        padding-bottom: 1rem;
+    }
+   
+}
+
+.reg-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img{
+        display: none;
+        position: absolute;
+        transform: translateX(320px);
+    }
+
+    input{
+        outline: none;
+        border: 1px solid $primary1;
+        border-radius: 30px;
+        padding: 20px;
+        width: 100%;
+
+    }
+    input::placeholder{
+        color: $primary1;
+        font-family: $font;
+    }
+
+    button{
+        border: none;
+        background-color: lighten($primary2, 10%);
+        background-image: url(/13/base-apparel-coming-soon-master/images/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 1rem;
+        background-position: center center;
+        padding: 30px 40px;
+        position: absolute;
+        right: 0;
+        border-radius: 30px;
+        box-shadow: 0 0 30px rgba($primary2, 0.4);
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: lighten($primary2, 20%);
+    }
+
+
+}
+
+.please{
+    display: none;
+    // display: inline-block;
+    // position: relative;
+    // border: 3px solid red;
+    color: red;
+
+}
+
+//media queries
+@media screen and (min-width: 1023px) {
+    
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .img{
+        img:nth-child(1){
+            display: none;
+        }
+        img:nth-child(2){
+            display: inline;
+            height: 100%;
+        }
+    }
+
+    .logoimg{
+        img{
+            display: inline;
+        }
+    }
+
+    .container{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .left{
+        // border: 3px solid red;
+        background: url(../images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 3rem;
+        // margin: 0px 50px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1{
+            // font-size: 5rem;
+        }
+        p{
+            // font-size: 1.5rem;
+        }
+    }
+
+}  

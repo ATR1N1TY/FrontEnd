@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  padding: 1.5rem 2rem;
+}
+
+.img img:nth-child(1) {
+  width: 100%;
+}
+
+.img img:nth-child(2) {
+  width: 100%;
+  display: none;
+}
+
+.logoimg img {
+  display: none;
+}
+
+.left {
+  text-align: center;
+  padding: 1rem;
+}
+
+.left h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #413a3a;
+}
+
+.left h1 span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.left p {
+  color: #ce9797;
+  padding-bottom: 1rem;
+}
+
+.reg-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.reg-input img {
+  display: none;
+  position: absolute;
+  -webkit-transform: translateX(320px);
+          transform: translateX(320px);
+}
+
+.reg-input input {
+  outline: none;
+  border: 1px solid #ce9797;
+  border-radius: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+.reg-input input::-webkit-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.reg-input input:-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.reg-input input::-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.reg-input input::placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.reg-input button {
+  border: none;
+  background-color: #fb9393;
+  background-image: url(/13/base-apparel-coming-soon-master/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center center;
+  padding: 30px 40px;
+  position: absolute;
+  right: 0;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 30px rgba(249, 98, 98, 0.4);
+          box-shadow: 0 0 30px rgba(249, 98, 98, 0.4);
+  cursor: pointer;
+}
+
+.reg-input button:hover {
+  background-color: #fdc4c4;
+}
+
+.please {
+  display: none;
+  color: red;
+}
+
+@media screen and (min-width: 1023px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .img img:nth-child(1) {
+    display: none;
+  }
+  .img img:nth-child(2) {
+    display: inline;
+    height: 100%;
+  }
+  .logoimg img {
+    display: inline;
+  }
+  .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .left {
+    background: url(../images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=style.css.map */
