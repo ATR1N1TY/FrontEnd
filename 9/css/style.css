@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5eff5;
+  font-family: "Karla", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.container {
+  margin: 3rem 1.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.Join, .subs, .WhyUs {
+  padding: 1.5rem;
+  color: #98a6bd;
+}
+
+.Join {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.Join h2 {
+  color: #2ab2af;
+}
+
+.Join p:nth-last-child(2) {
+  color: #c0df34;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Join p:nth-last-child(1) {
+  color: #98a6bd;
+}
+
+.subs, .WhyUs {
+  color: #e5eff5;
+}
+
+.subs {
+  background-color: #2ab2af;
+}
+
+.subs .value-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subs .value-text .value {
+  font-size: 50px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.subs .value-text .text {
+  color: #c1d7e6;
+}
+
+.subs button {
+  border: none;
+  border-radius: 5px;
+  background-color: #c0df34;
+  width: 100%;
+  padding: .8rem 0;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.WhyUs {
+  background-color: #2cbab8;
+  border-radius: 0 0 5px 5px;
+}
+
+@media screen and (min-width: 1100px) {
+  html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0;
+    margin: auto;
+    margin-top: 5%;
+  }
+  .bottom-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .bottom-container .WhyUs {
+    border-radius: 0 0 5px 0;
+  }
+  .bottom-container .subs {
+    border-radius: 0 0 0 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

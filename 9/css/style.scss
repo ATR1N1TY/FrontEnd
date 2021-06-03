@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// Primary colors
+$Primary1: hsl(179, 62%, 43%);
+$Primary2: hsl(71, 73%, 54%);
+
+// Neutral colors
+$Neutral1: hsl(204, 43%, 93%);
+$Neutral2:  hsl(218, 22%, 67%);
+
+// fonts
+$DefaultFontSize: 16px;
+$font: 'Karla', sans-serif;
+
+html{
+    width: 100vw;
+    height: 100vh;
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: $Neutral1;
+        font-family: $font;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    // border: 3px solid red;
+    // margin-left: -16px;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+.container{
+    // border: 3px solid red;
+    margin: 3rem 1.5rem;
+    // padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+    background-color: white;   
+}
+
+.inner-container{
+    // border: 3px solid red;
+    // margin: 1rem;
+    // border-radius: 100px;
+
+}
+
+h2{
+    // margin: -1px;
+}
+
+.Join, .subs, .WhyUs{
+    padding: 1.5rem;
+    color: $Neutral2;
+}
+
+
+.Join{
+    // border: 3px solid red;
+    background-color: white;
+    border-radius: 5px;
+    
+    h2{
+        color: $Primary1;
+    }
+
+    p:nth-last-child(2){
+        color: $Primary2;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    p:nth-last-child(1){
+        color: $Neutral2;
+    }
+}
+
+.subs, .WhyUs{
+    color: $Neutral1;
+}
+
+.subs{
+    background-color: $Primary1;
+
+    .value-text{
+        // border: 3px solid red;
+        display: flex;
+        align-items: center;
+        .value{
+            font-size: 50px;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .text{
+            color: darken($Neutral1, 10%);
+        }
+    }
+
+    button{
+        border: none;
+        // border: 3px solid red;
+        border-radius: 5px;
+        background-color: $Primary2;
+        width: 100%;
+        padding: .8rem 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        color: white;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    
+}
+
+.WhyUs{
+    background-color: lighten($Primary1, 2%);
+    border-radius: 0 0 5px 5px;
+}
+
+@media screen and (min-width:1100px) {
+
+    html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    body{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // border: 3px solid red;
+        // width: 100vw;
+        // height: 508px;
+        // text-align: center;
+    }
+
+    .container{
+        max-width: 800px;
+        margin: 0;
+        margin: auto;
+        // vertical-align: middle;
+        margin-top: 5%;
+        // border-radius: 100px;
+    }
+
+    .bottom-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .WhyUs{
+            border-radius: 0 0 5px 0;
+        }
+
+        .subs{
+            border-radius: 0 0 0 5px;
+        }
+    }
+
+
+
+
+}
+
+
+
