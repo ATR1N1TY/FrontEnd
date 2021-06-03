@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Primary1: hsl(0, 78%, 62%);
+    --Primary2: hsl(180, 62%, 55%);
+    --Primary3: hsl(34, 97%, 64%);
+    --Primary4: hsl(212, 86%, 64%);
+
+    --Neutral: hsl(234, 12%, 34%);
+    --Neutral: hsl(229, 6%, 66%);
+    --Neutral: hsl(0, 0%, 98%);
+
+    /* font weights: 200, 400, 600 */
+    --font: 'Poppins', sans-serif;
+    --FontSize: 15px;
+
+    --DesktopWidth: 1440px;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    font-size: var(--FontSize);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero{
+    display: inline-block;
+    margin: 3rem 1.5rem;
+}
+
+.top-text{
+    text-align: center;
+}
+.top-text > h1:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.top-text > h1:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.top-text > p{
+    font-weight: 200;
+}
+
+.card{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.card > p{
+    margin-top: -10px;
+}
+.card > img{
+    width: 50px;
+    align-self: flex-end;
+}
+.card1{
+    border-top: 5px solid var(--Primary2);
+}
+.card2{
+    border-top: 5px solid var(--Primary1);
+}
+.card3{
+    border-top: 5px solid var(--Primary3);
+}
+.card4{
+    border-top: 5px solid var(--Primary4);
+}
+
+@media screen and (min-width:1440px) {
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero{
+        margin: 0;
+    }
+    .bottom-cards{
+        /* border: 3px solid red; */
+        display: flex;
+    }
+
+    .card{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 0;
+        margin: 0 1rem;
+    }
+
+    .card2{
+        margin-bottom: 2rem;
+    }
+
+    .card1-container, .card4-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .top-text{
+        margin-bottom:70px;
+    }
+
+    .top-text > h1:nth-child(1){
+        font-size: 2.5rem;
+        /* border: 3px solid red; */
+    }
+    .top-text > h1:nth-child(2){
+        font-size: 2.5rem;
+        margin-top: -30px;
+        margin-bottom: -15px;
+        /* border: 3px solid red; */
+    }
+}
