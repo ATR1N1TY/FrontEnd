@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+// colors
+// primary:
+$Primary: hsl(223, 87%, 63%);
+$ShadowColor: hsla(223, 87%, 63%, .5);
+
+// secondary
+$Secondary1: hsl(223, 100%, 88%);
+$Secondary2: hsl(354, 100%, 66%);
+
+// neutral
+$Neutral1: hsl(0, 0%, 59%);
+$Neutral2: hsl(209, 33%, 12%);
+
+// fonts. - Weights: 300, 600, 700
+$DefaultFontSize: 20px;
+$Font: 'Libre Franklin', sans-serif;
+
+// Weights
+$Weight1: 300;
+$Weight2: 600;
+$Weight3: 700;
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $Font;
+    font-size: $DefaultFontSize;
+    display: inline-block;
+    color: $Neutral1;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 1em 2em;
+    // height: 100vh;
+}
+
+.text{
+
+    img{
+        width: 3em;
+    }
+
+    h1{
+        font-weight: $Weight1;
+        font-size: 1.3em;
+
+        span{
+            font-weight: $Weight3;
+            color: $Neutral2;
+        }
+    }
+
+    p{
+        font-size: 0.8em;
+        color: $Neutral2;
+        font-weight: $Weight1;
+    }
+}
+
+.notify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p{
+        display: none;
+    }
+    
+    input{
+        border: 1px solid $Secondary1;
+        border-radius: 50px;
+        padding: 1rem;
+        margin-bottom: 1em;
+    }
+    input::placeholder{
+        color: $Secondary1;
+    }
+
+    button{
+        border-radius: 50px;
+        padding: 1rem;
+        border: none;
+        background-color: $Primary;
+        color: white;
+        font-size: 0.8em;
+        box-shadow: 0px 5px 10px $ShadowColor;
+    }
+}
+
+.img-container{
+    margin: 3em 0;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 2em;
+        padding-left: 1em;
+    }
+}
+
+.rights{
+    p{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 1399px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .container{
+        width: 50vw;
+    }
+
+    .notify{
+        // border: 3px solid red;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        input{
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+    }
+
+    .img-container{
+        margin: 2em 0;
+    }
+}
+

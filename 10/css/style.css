@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  color: #969696;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin: 1em 2em;
+}
+
+.text img {
+  width: 3em;
+}
+
+.text h1 {
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.text h1 span {
+  font-weight: 700;
+  color: #151f29;
+}
+
+.text p {
+  font-size: 0.8em;
+  color: #151f29;
+  font-weight: 300;
+}
+
+.notify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notify p {
+  display: none;
+}
+
+.notify input {
+  border: 1px solid #c2d3ff;
+  border-radius: 50px;
+  padding: 1rem;
+  margin-bottom: 1em;
+}
+
+.notify input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.notify input:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.notify input::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.notify input::placeholder {
+  color: #c2d3ff;
+}
+
+.notify button {
+  border-radius: 50px;
+  padding: 1rem;
+  border: none;
+  background-color: #4f7df3;
+  color: white;
+  font-size: 0.8em;
+  -webkit-box-shadow: 0px 5px 10px rgba(79, 125, 243, 0.5);
+          box-shadow: 0px 5px 10px rgba(79, 125, 243, 0.5);
+}
+
+.img-container {
+  margin: 3em 0;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.media img {
+  width: 2em;
+  padding-left: 1em;
+}
+
+.rights p {
+  font-size: 0.7em;
+}
+
+@media screen and (min-width: 1399px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container {
+    width: 50vw;
+  }
+  .notify {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+  .notify input {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .img-container {
+    margin: 2em 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
